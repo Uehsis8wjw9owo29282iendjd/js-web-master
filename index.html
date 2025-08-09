@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js project</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="message"></div>
+    <div id="register-section">
+        <h2>Register</h2>
+        <form id="register-form">
+            <input type="text" id="register-name" placeholder="Name" required><br>
+            <input type="email" id="register-email" placeholder="Email" required><br>
+            <input type="password" id="register-password" placeholder="Password" required><br>
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="#" id="show-login">Login here</a></p>
+    </div>
+    <div id="login-section" style="display:none;">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="email" id="login-email" placeholder="Email" required><br>
+            <input type="password" id="login-password" placeholder="Password" required><br>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="#" id="show-register">Register here</a></p>
+    </div>
+    <div id="profile-section" style="display:none;">
+        <h2>Welcome, <span id="profile-name"></span>!</h2>
+        <p>Email: <span id="profile-email"></span></p>
+        <button id="logout-btn">Logout</button>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
